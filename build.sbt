@@ -8,7 +8,7 @@ lazy val root = (project in file("."))
   .settings(
     inThisBuild(List(
       organization := "com.techmonal",
-      scalaVersion := "2.13.1",
+      scalaVersion := "2.13.5",
       scalastyleFailOnError := true,
       scalastyleFailOnWarning := false,
       scalafmtOnCompile := true
