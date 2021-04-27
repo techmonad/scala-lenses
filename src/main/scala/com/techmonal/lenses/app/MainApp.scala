@@ -37,7 +37,8 @@ object MainApp extends App {
    * Update employee -> department -> address -> post code
    */
   // Using copy
-  val emp_3 = employee.copy(department = employee.department.copy(address = employee.department.address.copy(post = "1234-EE")))
+  val emp_3 =
+    employee.copy(department = employee.department.copy(address = employee.department.address.copy(post = "1234-EE")))
   logger.info(s"Emp 3: ${emp_3}")
 
   // Using lens
