@@ -16,7 +16,6 @@ lazy val root = (project in file("."))
     name := "scala-lenses",
     libraryDependencies ++= dependencies
   )
-  
 
 lazy val dependencies = Seq(
   "ch.qos.logback" % "logback-classic" % "1.2.3",
