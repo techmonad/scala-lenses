@@ -1,4 +1,5 @@
-# scala-lenses
+# scala-lenses [![Scala CI](https://github.com/techmonad/scala-lenses/actions/workflows/scala.yml/badge.svg)](https://github.com/techmonad/scala-lenses/actions/workflows/scala.yml)
+
 A simple example to play with scala case classes using lenses.
 
 ```scala
