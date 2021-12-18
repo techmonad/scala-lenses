@@ -9,7 +9,7 @@ lazy val root = (project in file("."))
     inThisBuild(
       List(
         organization := "com.techmonal",
-        scalaVersion := "2.13.5",
+        scalaVersion := "2.13.7",
         scalastyleFailOnError := true,
         scalastyleFailOnWarning := false,
         scalafmtOnCompile := true
@@ -20,8 +20,8 @@ lazy val root = (project in file("."))
   )
 
 lazy val dependencies = Seq(
-  "ch.qos.logback" % "logback-classic" % "1.2.6",
-  "org.scalatest" %% "scalatest" % "3.2.10" % Test
+  "ch.qos.logback" % "logback-classic" % "1.2.9",
+  "org.scalatest" %% "scalatest" % "3.2.9" % Test
 )
 
 scalacOptions ++= Seq(
