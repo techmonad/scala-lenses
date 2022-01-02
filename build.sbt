@@ -8,20 +8,20 @@ lazy val root = (project in file("."))
   .settings(
     inThisBuild(
       List(
-        organization := "com.techmonal",
-        scalaVersion := "2.13.7",
-        scalastyleFailOnError := true,
+        organization            := "com.techmonal",
+        scalaVersion            := "2.13.7",
+        scalastyleFailOnError   := true,
         scalastyleFailOnWarning := false,
-        scalafmtOnCompile := true
+        scalafmtOnCompile       := true,
       )
     ),
     name := "scala-lenses",
-    libraryDependencies ++= dependencies
+    libraryDependencies ++= dependencies,
   )
 
 lazy val dependencies = Seq(
   "ch.qos.logback" % "logback-classic" % "1.2.10",
-  "org.scalatest" %% "scalatest" % "3.2.10" % Test
+  "org.scalatest" %% "scalatest"       % "3.2.10" % Test,
 )
 
 scalacOptions ++= Seq(
@@ -29,14 +29,14 @@ scalacOptions ++= Seq(
   "-unchecked",
   "-language:higherKinds",
   "-language:postfixOps",
-  "-deprecation"
+  "-deprecation",
 )
 
 resolvers ++= Seq(
   Resolver.mavenLocal,
   Resolver.sonatypeRepo("releases"),
   Resolver.sonatypeRepo("snapshots"),
-  "Bintray ".at("https://dl.bintray.com/projectseptemberinc/maven")
+  "Bintray ".at("https://dl.bintray.com/projectseptemberinc/maven"),
 )
 
 releaseProcess := Seq(
@@ -51,7 +51,7 @@ releaseProcess := Seq(
   tagRelease,
   setNextVersion,
   commitNextVersion,
-  pushChanges
+  pushChanges,
 )
 
 addCommandAlias("validate", "; clean; compile; test;")
