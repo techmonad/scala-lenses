@@ -21,7 +21,7 @@ lazy val root = (project in file("."))
 
 lazy val dependencies = Seq(
   "ch.qos.logback" % "logback-classic" % "1.2.10",
-  "org.scalatest" %% "scalatest"       % "3.2.10" % Test,
+  "org.scalatest" %% "scalatest"       % "3.2.11" % Test,
 )
 
 scalacOptions ++= Seq(
